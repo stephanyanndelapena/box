@@ -1,0 +1,30 @@
+
+import './App.css'
+
+function Header({ name }) {
+  return (
+    <header className="header">
+      <h1>{name}</h1>
+    </header>
+  )
+}
+function Content({ subjectCode }) {
+  return (
+    <div className="content">
+      <p>{subjectCode}</p>
+    </div>
+  )
+}
+function App() {
+  const name = 'Stephany Ann Dela Peña'
+  const subjectCode = 'CPEITEL'
+
+  return (
+    <div className="App">
+      <Header name={name} />
+      <Content subjectCode={subjectCode} />
+    </div>
+  )
+}
+
+export default App
