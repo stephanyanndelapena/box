@@ -8,9 +8,9 @@ function Header({ name }) {
     </header>
   )
 }
-function Content({ subjectCode }) {
+function Box({ subjectCode }) {
   return (
-    <div className="content">
+    <div className="box">
       <p>{subjectCode}</p>
     </div>
   )
@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header name={name} />
-      <Content subjectCode={subjectCode} />
+      <Box subjectCode={subjectCode} />
     </div>
   )
 }
